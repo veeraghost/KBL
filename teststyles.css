@@ -1,0 +1,21 @@
+/* Basic styling for products and cart */
+.products {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.product {
+  border: 1px solid #ccc;
+  padding: 10px;
+  width: 200px;
+  text-align: center;
+}
+
+.cart {
+  border: 1px solid #ccc;
+  padding: 10px;
+  width: 300px;
+}
+
+/* Additional styles can be added */

@@ -1,0 +1,895 @@
+<!DOCTYPE html>
+<html lang="sv">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link type="text/css" href="CSS2/main.css" rel="stylesheet" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+            integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+            crossorigin="anonymous"
+        />
+        <script src="JS2/jquery-3.5.1.min.js"></script>
+        <script src="JS2/multislider.min.js"></script>
+		
+        <title>Kerala Lottery Bumper - Buy Tickets </title>
+
+        
+    </head>
+
+    <body>
+	<header>
+        <!--Navbar-->
+        <nav>
+            <!--Navbar has two part the top one and the bottom one-->
+            <!--Here is top one and in this part I put logo, my account part, and the shopping cart-->
+            <div class="navbar-top" id="navbar-top">
+                <div>
+                    <button id="menuButton"><i class="fas fa-bars"></i></button>
+                    <!--Logo-->
+                    <a href="index.html">
+                        <h2 class="logo"><img src="assets/images/logo.png" width="80px" height="80px" alt="site-logo"></h2>
+                    </a>
+                </div>
+                <div class="navbar" id="navbar">
+                    <div class="links">
+                        <ul >
+                            <li class="nav-links"><a href="index.html">HOME</a></li>
+				<li class="nav-links"><a href="tracko.html">TRACK ORDER</a></li>
+				<li class="nav-links"><a href="claim.html">REGISTER CLAIMS</a></li>
+                <li class="nav-links"><a href="http://results.keralalotteryonline.in/" target="_blank">RESULTS</a></li>
+                <li class="nav-links"><a href="shop.html">LOTTERIES</a></li>
+                <li class="nav-links"><a href="contact.html">CONTACT US</a></li>
+                        
+                        <div class="shopping-cart">
+                            <div class="sum-prices">
+                                <!--Shopping cart logo-->
+                                <i
+                                    class="fas fa-shopping-cart shoppingCartButton"
+                                ></i>
+                                <!--The total prices of products in the shopping cart -->
+                                <h6 id="sum-prices"></h6>
+                            </div>
+                        </div></ul>
+                    </div>                    
+                </div>
+            </div>
+            <div class="producstOnCart hide">
+                <div class="overlay"></div>
+                <div class="top">
+                    <button id="closeButton">
+                        <i class="fas fa-times-circle"></i>
+                    </button>
+                    <h3>Cart</h3>
+                </div>
+                <ul id="buyItems">
+                    <h4 class="empty">Your shopping cart is empty</h4>
+                    <!-- <li class="buyItem">
+						<img src="Images/producs-images/Mobiles/galaxynote10.png">
+						<div>
+							<h5>Products Name</h5>
+							<h6>$199</h6>
+							<div>
+								<button>-</button>
+								<span class="countOfProduct">1</span>
+								<button>+</button>
+							</div>
+						</div>
+					</li> -->
+                </ul>
+                <lable class="checkout-lable hidden">Total Price (Incl GST)</lable>
+                <h6 class="btn checkout-total hidden" id="sum-prices-all"></h6>
+                <a href=cart.html><button class="btn checkout hidden">Check out</button></a>
+                
+            </div>
+            
+        </nav>
+		</header>
+        
+        <main>
+            <section class="main-section">
+                <div class="product-container">
+                    <div class="products">
+                        <div class="product">
+                            <div class="product-under">
+                                <figure class="product-image">
+                                    <img src="assets/images/elements/Pooja1.png" alt="POOJA BUMPER - 1 Ticket" />
+                                    <div class="product-over">
+                                        <button
+                                            class="btn btn-small addToCart"
+                                            data-product-id="1">
+                                            <i class="fas fa-cart-plus"></i>Add
+                                            to cart
+                                        </button>
+                                        <a href="detail_page.html" class="btn btn-small">More Info</a>
+                                    </div>
+                                </figure>
+                                
+                                <div class="product-summary">
+                                    <h5 class="productName">POOJA BUMPER - 1 Ticket</h5>
+                                    <p class="next-draw-time">Next Draw : <b>22-Nov-2023</b></p>
+                                    <h6 class="price">
+                                        &#x20b9;<span class="priceValue">300</span>
+                                    </h6>
+                                    <h5>&#x20b9; 300</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product">
+                            <div class="product-under">
+                                <figure class="product-image">
+                                    <img
+                                        src="assets/images/elements/Pooja1.png"
+                                        alt="POOJA BUMPER FULL SET"
+                                    />
+                                    <div class="product-over">
+                                        <button
+                                            class="btn btn-small addToCart"
+                                            data-product-id="2"
+                                        >
+                                            <i class="fas fa-cart-plus"></i>Add
+                                            to cart
+                                        </button>
+                                        <a
+                                            href="detail_page.html"
+                                            class="btn btn-small"
+                                            >More Info</a
+                                        >
+                                    </div>
+                                </figure>
+                                <div class="product-summary">
+                                    <h5 class="productName">POOJA BUMPER FULL SET</h5>
+                                    <p class="next-draw-time">Next Draw : <b>22-Nov-2023</b></p>
+                                    
+                                    <h6 class="price">
+                                        &#x20b9;<span class="priceValue">1550</span>
+                                    </h6>
+                                    <h5>&#x20b9; 1550</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product">
+                            <div class="product-under">
+                                <figure class="product-image">
+                                    <img
+                                        src="assets/images/elements/Pooja1.png"
+                                        alt="POOJA BUMPER - Full Book"
+                                    />
+                                    <div class="product-over">
+                                        <button
+                                            class="btn btn-small addToCart"
+                                            data-product-id="3"
+                                        >
+                                            <i class="fas fa-cart-plus"></i>Add
+                                            to cart
+                                        </button>
+                                        <a
+                                            href="detail_page.html"
+                                            class="btn btn-small"
+                                            >More Info</a
+                                        >
+                                    </div>
+                                </figure>
+                                <div class="product-summary">
+                                    <h5 class="productName">POOJA BUMPER - Full Book</h5>
+                                    <p class="next-draw-time">Next Draw : <b>22-Nov-2023</b></p>
+                                    <h5>&#x20b9;  2990</h5>
+                                    <h6 class="price">
+                                        &#x20b9;<span class="priceValue">2990</span>
+                                    </h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product">
+                            <div class="product-under">
+                                <figure class="product-image">
+                                    <img
+                                        src="assets/images/elements/75L.png"
+                                        alt="WIN WIN"
+                                    />
+                                    <div class="product-over">
+                                        <button
+                                            class="btn btn-small addToCart"
+                                            data-product-id="4"
+                                        >
+                                            <i class="fas fa-cart-plus"></i>Add
+                                            to cart
+                                        </button>
+                                        <a
+                                            href="detail_page.html"
+                                            class="btn btn-small"
+                                            >More Info</a
+                                        >
+                                    </div>
+                                </figure>
+                                <div class="product-summary">
+                                    <h5 class="productName">WIN WIN</h5>
+                                    <p class="next-draw-time">Next Draw : <b>13-Nov-2023</b></p>
+                                    <h5>&#x20b9; 40</h5>
+                                    <h6 class="price">
+                                        &#x20b9;<span class="priceValue">40</span>
+                                    </h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product">
+                            <div class="product-under">
+                                <figure class="product-image">
+                                    <img
+                                        src="assets/images/elements/75m.png"
+                                        alt="WIN WIN - Same Number Set"
+                                    />
+                                    <div class="product-over">
+                                        <button
+                                            class="btn btn-small addToCart"
+                                            data-product-id="5"
+                                        >
+                                            <i class="fas fa-cart-plus"></i>Add
+                                            to cart
+                                        </button>
+                                        <a
+                                            href="detail_page.html"
+                                            class="btn btn-small"
+                                            >More Info</a
+                                        >
+                                    </div>
+                                </figure>
+                                <div class="product-summary">
+                                    <h5 class="productName">WIN WIN - Same Number Set (12 Tickets)</h5>
+                                    <p class="next-draw-time">Next Draw : <b>13-Nov-2023</b></p>
+                                    <h5>&#x20b9;480</h5>
+                                    <h6 class="price">
+                                        &#x20b9;<span class="priceValue">480</span>
+                                    </h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product">
+                            <div class="product-under">
+                                <figure class="product-image">
+                                    <img
+                                        src="assets/images/elements/75f.png"
+                                        alt="Win Win 1 Full Book (25 Tickets)"
+                                    />
+                                    <div class="product-over">
+                                        <button
+                                            class="btn btn-small addToCart"
+                                            data-product-id="6"
+                                        >
+                                            <i class="fas fa-cart-plus"></i>Add
+                                            to cart
+                                        </button>
+                                        <a
+                                            href="detail_page.html"
+                                            class="btn btn-small"
+                                            >More Info</a
+                                        >
+                                    </div>
+                                </figure>
+                                <div class="product-summary">
+                                    <h5 class="productName">Win Win 1 Full Book (25 Tickets)</h5>
+                                    <p class="next-draw-time">Next Draw : <b>13-Nov-2023</b></p>
+                                    <h5>&#x20b9; 975</h5>
+                                    <h6 class="price">
+                                        &#x20b9;<span class="priceValue">975</span>
+                                    </h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product">
+                            <div class="product-under">
+                                <figure class="product-image">
+                                    <img
+                                        src="assets/images/elements/75ss.png"
+                                        alt="STHREESAKTHI"
+                                    />
+                                    <div class="product-over">
+                                        <button
+                                            class="btn btn-small addToCart"
+                                            data-product-id="7"
+                                        >
+                                            <i class="fas fa-cart-plus"></i>Add
+                                            to cart
+                                        </button>
+                                        <a
+                                            href="detail_page.html"
+                                            class="btn btn-small"
+                                            >More Info</a
+                                        >
+                                    </div>
+                                </figure>
+                                <div class="product-summary">
+                                    <h5 class="productName">STHREESAKTHI</h5>
+                                    <p class="next-draw-time">Next Draw : <b>14-Nov-2023</b></p>
+                                    <h5>&#x20b9; 40</h5>
+                                    <h6 class="price">
+                                        &#x20b9;<span class="priceValue">40</span>
+                                    </h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product">
+                            <div class="product-under">
+                                <figure class="product-image">
+                                    <img
+                                        src="assets/images/elements/75st.png"
+                                        alt="Sthree Sakthi - Same Number Set "
+                                    />
+                                    <div class="product-over">
+                                        <button
+                                            class="btn btn-small addToCart"
+                                            data-product-id="8"
+                                        >
+                                            <i class="fas fa-cart-plus"></i>Add
+                                            to cart
+                                        </button>
+                                        <a
+                                            href="detail_page.html"
+                                            class="btn btn-small"
+                                            >More Info</a
+                                        >
+                                    </div>
+                                </figure>
+                                <div class="product-summary">
+                                    <h5 class="productName">Sthree Sakthi - Same Number Set</h5>
+                                    <p class="next-draw-time">Next Draw : <b>14-Nov-2023</b></p>
+                                    <h5>&#x20b9; 480</h5>
+                                    <h6 class="price">
+                                        &#x20b9;<span class="priceValue">480</span>
+                                    </h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product">
+                            <div class="product-under">
+                                <figure class="product-image">
+                                    <img
+                                        src="assets/images/elements/75fs.png"
+                                        alt="Sthree Sakthi 1 Full Book"
+                                    />
+                                    <div class="product-over">
+                                        <button
+                                            class="btn btn-small addToCart"
+                                            data-product-id="9"
+                                        >
+                                            <i class="fas fa-cart-plus"></i>Add
+                                            to cart
+                                        </button>
+                                        <a
+                                            href="detail_page.html"
+                                            class="btn btn-small"
+                                            >More Info</a
+                                        >
+                                    </div>
+                                </figure>
+                                <div class="product-summary">
+                                    <h5 class="productName">Sthree Sakthi 1 Full Book</h5>
+                                    <p class="next-draw-time">Next Draw : <b>14-Nov-2023</b></p>
+                                    <h5>&#x20b9; 975</h5>
+                                    <h6 class="price">
+                                        &#x20b9;<span class="priceValue">975</span>
+                                    </h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product">
+                            <div class="product-under">
+                                <figure class="product-image">
+                                    <img
+                                        src="assets/images/elements/A75.png"
+                                        alt="AKSHAYA - 1 Ticket"
+                                    />
+                                    <div class="product-over">
+                                        <button
+                                            class="btn btn-small addToCart"
+                                            data-product-id="10"
+                                        >
+                                            <i class="fas fa-cart-plus"></i>Add
+                                            to cart
+                                        </button>
+                                        <a
+                                            href="detail_page.html"
+                                            class="btn btn-small"
+                                            >More Info</a
+                                        >
+                                    </div>
+                                </figure>
+                                <div class="product-summary">
+                                    <h5 class="productName">AKSHAYA - 1 Ticket</h5>
+                                    <p class="next-draw-time">Next Draw : <b>19-Nov-2023</b></p>
+                                    <h5>&#x20b9; 40</h5>
+                                    <h6 class="price">
+                                        &#x20b9;<span class="priceValue">40</span>
+                                    </h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product">
+                            <div class="product-under">
+                                <figure class="product-image">
+                                    <img
+                                        src="assets/images/elements/A12.png"
+                                        alt="Set Number Akshaya"
+                                    />
+                                    <div class="product-over">
+                                        <button
+                                            class="btn btn-small addToCart"
+                                            data-product-id="11"
+                                        >
+                                            <i class="fas fa-cart-plus"></i>Add
+                                            to cart
+                                        </button>
+                                        <a
+                                            href="detail_page.html"
+                                            class="btn btn-small"
+                                            >More Info</a
+                                        >
+                                    </div>
+                                </figure>
+                                <div class="product-summary">
+                                    <h5 class="productName">Set Number Akshaya</h5>
+                                    <p class="next-draw-time">Next Draw : <b>19-Nov-2023</b></p>
+                                    <h5>&#x20b9; 480</h5>
+                                    <h6 class="price">
+                                        &#x20b9;<span class="priceValue">480</span>
+                                    </h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product">
+                            <div class="product-under">
+                                <figure class="product-image">
+                                    <img
+                                        src="assets/images/elements/A25.png"
+                                        alt="AKSHAYA - Full Book"
+                                    />
+                                    <div class="product-over">
+                                        <button
+                                            class="btn btn-small addToCart"
+                                            data-product-id="12"
+                                        >
+                                            <i class="fas fa-cart-plus"></i>Add
+                                            to cart
+                                        </button>
+                                        <a
+                                            href="detail_page.html"
+                                            class="btn btn-small"
+                                            >More Info</a
+                                        >
+                                    </div>
+                                </figure>
+                                <div class="product-summary">
+                                    <h5 class="productName">AKSHAYA - Full Book</h5>
+                                    <p class="next-draw-time">Next Draw : <b>19-Nov-2023</b></p>
+                                    <h5>&#x20b9; 975</h5>
+                                    <h6 class="price">
+                                        &#x20b9;<span class="priceValue">975</span>
+                                    </h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product">
+                            <div class="product-under">
+                                <figure class="product-image">
+                                    <img
+                                        src="assets/images/elements/ffw.png"
+                                        alt="Fifty Fifty 1 Ticket"
+                                    />
+                                    <div class="product-over">
+                                        <button
+                                            class="btn btn-small addToCart"
+                                            data-product-id="13"
+                                        >
+                                            <i class="fas fa-cart-plus"></i>Add
+                                            to cart
+                                        </button>
+                                        <a
+                                            href="detail_page.html"
+                                            class="btn btn-small"
+                                            >More Info</a
+                                        >
+                                    </div>
+                                </figure>
+                                <div class="product-summary">
+                                    <h5 class="productName">Fifty Fifty 1 Ticket</h5>
+                                    <p class="next-draw-time">Next Draw : <b>22-Nov-2023</b></p>
+                                    <h5>&#x20b9; 50</h5>
+                                    <h6 class="price">
+                                        &#x20b9;<span class="priceValue">50</span>
+                                    </h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product">
+                            <div class="product-under">
+                                <figure class="product-image">
+                                    <img
+                                        src="assets/images/elements/ff12.png"
+                                        alt="Fifty Fifty - Same Number Set "
+                                    />
+                                    <div class="product-over">
+                                        <button
+                                            class="btn btn-small addToCart"
+                                            data-product-id="14"
+                                        >
+                                            <i class="fas fa-cart-plus"></i>Add
+                                            to cart
+                                        </button>
+                                        <a
+                                            href="detail_page.html"
+                                            class="btn btn-small"
+                                            >More Info</a
+                                        >
+                                    </div>
+                                </figure>
+                                <div class="product-summary">
+                                    <h5 class="productName">Fifty Fifty - Same Number Set</h5>
+                                    <p class="next-draw-time">Next Draw : <b>22-Nov-2023</b></p>
+                                    <h5>&#x20b9; 599</h5>
+                                    <h6 class="price">
+                                        &#x20b9;<span class="priceValue">599</span>
+                                    </h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product">
+                            <div class="product-under">
+                                <figure class="product-image">
+                                    <img
+                                        src="assets/images/elements/ff25.png"
+                                        alt="Fifty Fifty - 1 Full Book"
+                                    />
+                                    <div class="product-over">
+                                        <button
+                                            class="btn btn-small addToCart"
+                                            data-product-id="15"
+                                        >
+                                            <i class="fas fa-cart-plus"></i>Add
+                                            to cart
+                                        </button>
+                                        <a
+                                            href="detail_page.html"
+                                            class="btn btn-small"
+                                            >More Info</a
+                                        >
+                                    </div>
+                                </figure>
+                                <div class="product-summary">
+                                    <h5 class="productName">Fifty Fifty - 1 Full Book</h5>
+                                    <p class="next-draw-time">Next Draw : <b>22-Nov-2023</b></p>
+                                    <h5>&#x20b9; 1225</h5>
+                                    <h6 class="price">
+                                        &#x20b9;<span class="priceValue">1225</span>
+                                    </h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product">
+                            <div class="product-under">
+                                <figure class="product-image">
+                                    <img
+                                        src="assets/images/elements/kp1.png"
+                                        alt="Karunya 1 Ticket"
+                                    />
+                                    <div class="product-over">
+                                        <button
+                                            class="btn btn-small addToCart"
+                                            data-product-id="16"
+                                        >
+                                            <i class="fas fa-cart-plus"></i>Add
+                                            to cart
+                                        </button>
+                                        <a
+                                            href="detail_page.html"
+                                            class="btn btn-small"
+                                            >More Info</a
+                                        >
+                                    </div>
+                                </figure>
+                                <div class="product-summary">
+                                    <h5 class="productName">Karunya Plus - 1 Ticket</h5>
+                                    <p class="next-draw-time">Next Draw : <b>23-Nov-2023</b></p>
+                                    <h5>&#x20b9; 40</h5>
+                                    <h6 class="price">
+                                        &#x20b9;<span class="priceValue">40</span>
+                                    </h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product">
+                            <div class="product-under">
+                                <figure class="product-image">
+                                    <img
+                                        src="assets/images/elements/kp12.png"
+                                        alt="Karunya plus - 12 Ticket"
+                                    />
+                                    <div class="product-over">
+                                        <button
+                                            class="btn btn-small addToCart"
+                                            data-product-id="17"
+                                        >
+                                            <i class="fas fa-cart-plus"></i>Add
+                                            to cart
+                                        </button>
+                                        <a
+                                            href="detail_page.html"
+                                            class="btn btn-small"
+                                            >More Info</a
+                                        >
+                                    </div>
+                                </figure>
+                                <div class="product-summary">
+                                    <h5 class="productName">Karunya plus - 12 Ticket</h5>
+                                    <p class="next-draw-time">Next Draw : <b>23-Nov-2023</b></p>
+                                    <h5>&#x20b9; 480</h5>
+                                    <h6 class="price">
+                                        &#x20b9;<span class="priceValue">480</span>
+                                    </h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product">
+                            <div class="product-under">
+                                <figure class="product-image">
+                                    <img
+                                        src="assets/images/elements/kp25.png"
+                                        alt="Karunya plus - 1 Full Book"
+                                    />
+                                    <div class="product-over">
+                                        <button
+                                            class="btn btn-small addToCart"
+                                            data-product-id="18"
+                                        >
+                                            <i class="fas fa-cart-plus"></i>Add
+                                            to cart
+                                        </button>
+                                        <a
+                                            href="detail_page.html"
+                                            class="btn btn-small"
+                                            >More Info</a
+                                        >
+                                    </div>
+                                </figure>
+                                <div class="product-summary">
+                                    <h5 class="productName">Karunya plus - 1 Full Book</h5>
+                                    <p class="next-draw-time">Next Draw : <b>14-Nov-2023</b></p>
+                                    <h5>&#x20b9; 975</h5>
+                                    <h6 class="price">
+                                        &#x20b9;<span class="priceValue">975</span>
+                                    </h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product">
+                            <div class="product-under">
+                                <figure class="product-image">
+                                    <img
+                                        src="assets/images/elements/n1.png"
+                                        alt="Nirmal 1 Ticket"
+                                    />
+                                    <div class="product-over">
+                                        <button
+                                            class="btn btn-small addToCart"
+                                            data-product-id="19"
+                                        >
+                                            <i class="fas fa-cart-plus"></i>Add
+                                            to cart
+                                        </button>
+                                        <a
+                                            href="detail_page.html"
+                                            class="btn btn-small"
+                                            >More Info</a
+                                        >
+                                    </div>
+                                </figure>
+                                <div class="product-summary">
+                                    <h5 class="productName">Nirmal 1 Ticket</h5>
+                                    <p class="next-draw-time">Next Draw : <b>24-Nov-2023</b></p>
+                                    <h5>&#x20b9; 40</h5>
+                                    <h6 class="price">
+                                        &#x20b9;<span class="priceValue">40</span>
+                                    </h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product">
+                            <div class="product-under">
+                                <figure class="product-image">
+                                    <img
+                                        src="assets/images/elements/n12.png"
+                                        alt="Nirmal 12 Tickets - Same Number"
+                                    />
+                                    <div class="product-over">
+                                        <button
+                                            class="btn btn-small addToCart"
+                                            data-product-id="20"
+                                        >
+                                            <i class="fas fa-cart-plus"></i>Add
+                                            to cart
+                                        </button>
+                                        <a
+                                            href="detail_page.html"
+                                            class="btn btn-small"
+                                            >More Info</a
+                                        >
+                                    </div>
+                                </figure>
+                                <div class="product-summary">
+                                    <h5 class="productName">Nirmal 12 Tickets - Same Number</h5>
+                                    <p class="next-draw-time">Next Draw : <b>24-Nov-2023</b></p>
+                                    <h5>&#x20b9; 480</h5>
+                                    <h6 class="price">
+                                        &#x20b9;<span class="priceValue">480</span>
+                                    </h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product">
+                            <div class="product-under">
+                                <figure class="product-image">
+                                    <img
+                                        src="assets/images/elements/nfb25.png"
+                                        alt="Nirmal 25 Tickets - Full Book"
+                                    />
+                                    <div class="product-over">
+                                        <button
+                                            class="btn btn-small addToCart"
+                                            data-product-id="21"
+                                        >
+                                            <i class="fas fa-cart-plus"></i>Add
+                                            to cart
+                                        </button>
+                                        <a
+                                            href="detail_page.html"
+                                            class="btn btn-small"
+                                            >More Info</a
+                                        >
+                                    </div>
+                                </figure>
+                                <div class="product-summary">
+                                    <h5 class="productName">Nirmal 25 Tickets - Full Book</h5>
+                                    <p class="next-draw-time">Next Draw : <b>24-Nov-2023</b></p>
+                                    <h5>&#x20b9; 975</h5>
+                                    <h6 class="price">
+                                        &#x20b9;<span class="priceValue">975</span>
+                                    </h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product">
+                            <div class="product-under">
+                                <figure class="product-image">
+                                    <img
+                                        src="assets/images/elements/k1.png"
+                                        alt="Karunya 1 Ticket"
+                                    />
+                                    <div class="product-over">
+                                        <button
+                                            class="btn btn-small addToCart"
+                                            data-product-id="22"
+                                        >
+                                            <i class="fas fa-cart-plus"></i>Add
+                                            to cart
+                                        </button>
+                                        <a
+                                            href="detail_page.html"
+                                            class="btn btn-small"
+                                            >More Info</a
+                                        >
+                                    </div>
+                                </figure>
+                                <div class="product-summary">
+                                    <h5 class="productName">Karunya 1 Ticket</h5>
+                                    <p class="next-draw-time">Next Draw : <b>25-Nov-2023</b></p>
+                                    <h5>&#x20b9; 40</h5>
+                                    <h6 class="price">
+                                        &#x20b9;<span class="priceValue">40</span>
+                                    </h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product">
+                            <div class="product-under">
+                                <figure class="product-image">
+                                    <img
+                                        src="assets/images/elements/ks12.png"
+                                        alt="Karunya 12 Tickets - Same number set"
+                                    />
+                                    <div class="product-over">
+                                        <button
+                                            class="btn btn-small addToCart"
+                                            data-product-id="23"
+                                        >
+                                            <i class="fas fa-cart-plus"></i>Add
+                                            to cart
+                                        </button>
+                                        <a
+                                            href="detail_page.html"
+                                            class="btn btn-small"
+                                            >More Info</a
+                                        >
+                                    </div>
+                                </figure>
+                                <div class="product-summary">
+                                    <h5 class="productName">Karunya 12 Tickets - Same number set</h5>
+                                    <p class="next-draw-time">Next Draw : <b>25-Nov-2023</b></p>
+                                    <h5>&#x20b9; 480</h5>
+                                    <h6 class="price">
+                                        &#x20b9;<span class="priceValue">480</span>
+                                    </h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product">
+                            <div class="product-under">
+                                <figure class="product-image">
+                                    <img
+                                        src="assets/images/elements/kfb25.png"
+                                        alt="Karunya 25 Tickets - 1 Full Book"
+                                    />
+                                    <div class="product-over">
+                                        <button
+                                            class="btn btn-small addToCart"
+                                            data-product-id="24"
+                                        >
+                                            <i class="fas fa-cart-plus"></i>Add
+                                            to cart
+                                        </button>
+                                        <a
+                                            href="detail_page.html"
+                                            class="btn btn-small"
+                                            >More Info</a
+                                        >
+                                    </div>
+                                </figure>
+                                <div class="product-summary">
+                                    <h5 class="productName">Karunya 25 Tickets - 1 Full Book</h5>
+                                    <p class="next-draw-time">Next Draw : <b>25-Nov-2023</b></p>
+                                    <h5>&#x20b9; 975</h5>
+                                    <h6 class="price">
+                                        &#x20b9;<span class="priceValue">975</span>
+                                    </h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="footer-bottom">
+                <div class="container">
+                  <div class="row justify-content-between align-items-center">
+                    <div class="col-lg-6 col-sm-7">
+                      <div class="copy-right-text">
+                        <p>Copyright © 2022 <a href="#">Kerala Lottery Bumper</a> - All Rights Reserved.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </footer>
+        <script src="JS2/script.js"></script>
+        <script src="shopping-cart.js"></script>
+        <script>
+            // When the user scrolls the page, execute myFunction
+window.onscroll = function() {myFunction()};
+
+// Get the header
+var header = document.getElementById("navbar-top");
+
+// Get the offset position of the navbar
+var sticky = header.offsetTop;
+
+// Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+        </script>
+    </body>
+</html>
